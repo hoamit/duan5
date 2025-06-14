@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>TShop</title>
+    <style>
+      .navbar-custom {
+        background-color: #27ae60;
+      }
+      .navbar-custom .nav-link {
+        color: #fff !important;
+        font-weight: 500;
+        padding: 10px 20px;
+      }
+      .navbar-custom .nav-link:hover {
+        background-color: #219150;
+        border-radius: 5px;
+      }
+      .navbar-brand {
+        font-weight: bold;
+        font-size: 24px;
+        color: white !important;
+      }
+      .top-bar {
+        background-color: #f8f9fa;
+        font-size: 14px;
+      }
+      .top-bar a {
+        text-decoration: none;
+        color: #000;
+        margin-left: 10px;
+      }
+      .new-arrivals .card {
+        border: none;
+        text-align: center;
+      }
+      .footer {
+        background-color: #f8f9fa;
+        padding: 40px 0;
+      }
+      .new-arrivals .card {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .new-arrivals .card-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+      }
+
+      .new-arrivals .card-title {
+        min-height: 60px;
+      }
+
+      .new-arrivals .card p {
+        min-height: 40px;
+      }
+      .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <!-- Top bar -->
+      <div class="top-bar py-2 px-3 d-flex justify-content-between">
+        <div><span>Call us: +00 123 456 789</span></div>
+        <div>
+          <a href="#">My Account</a> | <a href="#">Sign In</a> |
+          <a href="#">Create Account</a> | <a href="#">My Cart ($120.00)</a>
+        </div>
+      </div>
+
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+          <a class="navbar-brand" href="#">TSHOP</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNav"
+            aria-controls="mainNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">New Products</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Pages</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">All Page Link</a>
+              </li>
+            </ul>
+            <form class="d-flex mt-2 mt-lg-0" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                required
+              />
+              <button class="btn btn-light" type="submit">🔍</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Banner -->
+      <div class="container my-4">
+        <div class="bg-dark text-white p-5 text-center">
+          <h2>10+ AMAZING COLOR THEME</h2>
+          <p>
+            Fully responsive Bootstrap Ecommerce Template. Available in 10+
+            color schemes and easy to use.
+          </p>
+        </div>
+      </div>
+
+      <!-- New Arrivals -->
+      <div class="container new-arrivals">
+        <h3 class="text-center mb-4">NEW ARRIVALS</h3>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card">
+              <img src="./images.jfif" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <span class="badge bg-success">NEW</span>
+                <span class="badge bg-danger">15% OFF</span>
+                <h5 class="card-title">CONSECTETUR ADIPISCING</h5>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p><strong>$25.00</strong></p>
+                <button class="btn btn-success">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card">
+              <img src="./images.jfif" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <span class="badge bg-danger">10% OFF</span>
+                <h5 class="card-title">LUPATIUN ZZERL DELENT</h5>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p><strong>$25.00</strong></p>
+                <button class="btn btn-success">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card">
+              <img src="./images.jfif" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">ELIFEND OPTION</h5>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p><strong>$25.00</strong></p>
+                <button class="btn btn-success">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card">
+              <img src="./images.jfif" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">MUTAMORIEN CONSECTETUDUM</h5>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p><strong>$25.00</strong></p>
+                <button class="btn btn-success">Add to cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Trusted Seller -->
+      <div class="container-fluid my-5">
+        <div class="bg-dark text-white p-5 text-center">
+          <h3>TRUSTED SELLER 500+</h3>
+          <p>Lorem ipsum dolor sit amet consectetur</p>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="footer text-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <h5>SUPPORT</h5>
+              <p>+1-202-555-0151</p>
+              <p>help@youwebsite.com</p>
+            </div>
+            <div class="col-md-3">
+              <h5>SHOP</h5>
+              <p>Men's</p>
+              <p>Women's</p>
+              <p>Gift Card</p>
+            </div>
+            <div class="col-md-3">
+              <h5>INFORMATION</h5>
+              <p>Questions?</p>
+              <p>Help</p>
+              <p>Contact us</p>
+            </div>
+            <div class="col-md-3">
+              <h5>STAY IN TOUCH</h5>
+              <input
+                type="email"
+                class="form-control mb-2"
+                placeholder="Email"
+              />
+              <button class="btn btn-success w-100">Subscribe</button>
+            </div>
+          </div>
+          <hr />
+          <p>© TSHOP 2014. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
